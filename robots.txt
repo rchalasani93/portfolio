@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://rchalasani93.github.io/portfolio/sitemap.xml
