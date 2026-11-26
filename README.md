@@ -12,8 +12,12 @@ python3 -m http.server 8000
 
 ## Publish on GitHub Pages
 
-Settings → Pages → Source: "Deploy from a branch", branch `main`, folder `/ (root)`.
-The site will be at https://rchalasani93.github.io/portfolio/
+Settings → Pages → Source: "GitHub Actions". Every push to `main` runs
+`.github/workflows/pages.yml`, which publishes only the site files (not this README).
+The site is at https://rchalasani93.github.io/portfolio/
+
+If you add a new file the site needs (an image, another page), add it to the
+`cp` line in `pages.yml` too.
 
 ## Files
 
