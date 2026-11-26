@@ -162,6 +162,22 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 700; line-height: 1.15; }
 .services dt { font-family: var(--serif); font-size: 22px; font-weight: 700; margin-bottom: 6px; }
 .services dd { color: var(--muted); }
 
+/* Experience */
+.timeline { list-style: none; max-width: 980px; }
+.timeline li {
+  display: grid; grid-template-columns: 190px 1fr; gap: 24px;
+  padding: 28px 0; border-top: 1px solid var(--line);
+}
+.timeline li:last-child { border-bottom: 1px solid var(--line); }
+.when { font-family: var(--mono); font-size: 14px; color: var(--accent); padding-top: 5px; }
+.timeline h3 { margin-bottom: 8px; }
+.timeline .at { display: block; font-family: var(--sans); font-size: 16px; font-weight: 500; color: var(--muted); margin-top: 4px; }
+.timeline p:not(.when) { color: var(--muted); max-width: 66ch; }
+.sub-title { margin-top: 56px; }
+.edu { list-style: none; max-width: 980px; }
+.edu li { padding: 14px 0; border-bottom: 1px solid var(--line); color: var(--muted); }
+.edu strong { color: var(--ink); font-weight: 600; }
+
 /* Skills */
 .skills-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; max-width: 980px; }
 .tags { list-style: none; display: flex; flex-wrap: wrap; gap: 10px; }
@@ -231,7 +247,7 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 700; line-height: 1.15; }
 @media (max-width: 520px) {
   body { font-size: 16px; }
   .section { padding: 72px var(--pad-x); }
-  .projects li { grid-template-columns: 1fr; gap: 6px; }
+  .projects li, .timeline li { grid-template-columns: 1fr; gap: 6px; }
 }
 
 /* Keyframes from the original template */
